@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Liên Cosmetics & Thiếu Niên Store</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      background-color: #fff;
+      color: #333;
+    }
+
+    header {
+      padding: 30px 20px;
+      text-align: center;
+      background-color: transparent;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+      color: #e91e63;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 30px;
+      background: #fff;
+      border-bottom: 1px solid #eee;
+    }
+    .cart-btn {
+      background-color: #007bff;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .background-nature {
+      background-image: url('https://i.postimg.cc/Wp8yNZmY/bg-nature.jpg');
+      background-size: cover;
+      background-position: center;
+      padding: 40px 0;
+    }
+
+    .bio-section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+      background: #ffe6ec;
+      border-radius: 12px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 20px;
+      color: #333;
+      backdrop-filter: brightness(0.9);
+    }
+    .bio-section img {
+      width: 180px;
+      border-radius: 50%;
+      border: 3px solid white;
+    }
+
+    .products {
+      background-color: #fff0f5;
+      padding: 40px 30px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .product {
+      border: 1px solid #eee;
+      padding: 20px;
+      border-radius: 12px;
+      text-align: center;
+      background-color: white;
+      transition: box-shadow 0.3s;
+    }
+    .product:hover {
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+    .product img {
+      width: 100%;
+      max-width: 220px;
+      height: auto;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .product h3 {
+      margin: 15px 0 10px;
+      font-size: 18px;
+    }
+    .product p {
+      font-size: 14px;
+      color: #777;
+    }
+    .buy-btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #e91e63;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #e91e63;
+      font-size: 14px;
+      color: white;
+    }
+    footer a {
+      color: #fff;
+      text-decoration: underline;
+    }
+
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      padding-top: 100px;
+      left: 0; top: 0;
+      width: 100%; height: 100%;
+      overflow: auto;
+      background-color: rgba(0,0,0,0.5);
+    }
+    .modal-content {
+      background-color: #fff;
+      margin: auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 90%;
+      max-width: 500px;
+      border-radius: 10px;
+    }
+    .close {
+      color: #aaa;
+      float: right;
+      font-size: 24px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .main-background {
+    background-color: #fff0e6; /* nền cam nhạt */
+    padding: 30px 0;
+    color: #333;
+    }
+
+header, nav, .bio-section {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 12px;
+}
+.products .product h3,
+.products .product p {
+  color: #222 !important;
+}
+
+  </style>
+</head>
+<body>
+
+<div class="main-background">
+  <header>
+    <h1>Liên Cosmetics & Sản phẩm dành cho Thiếu Niên</h1>
+    <p>Đẹp – Tươi – Tự tin mỗi ngày 🌟</p>
+  </header>
+
+  <nav>
+    <span>🏭️ Sản phẩm dành cho mọi lứa tuổi</span>
+    <a href="https://zalo.me/0788644616" class="cart-btn">🛒 Chat Zalo</a>
+  </nav>
+
+  <section class="bio-section">
+    <img src="https://i.postimg.cc/PN051fNw/avatar.jpg" alt="Liên cute">
+    <div>
+      <h2>🌸 Về Liên (Oanh Oanh) 🌸</h2>
+      <p>
+        Xin chào bạn, mình là <strong>Liên</strong> – người đam mê mỹ phẩm sạch và chăm sóc bản thân mỗi ngày.<br>
+        Mình tạo ra shop này để giúp bạn <strong>đẹp hơn – tự tin hơn</strong> bằng những sản phẩm chất lượng cao, thân thiện với làn da.
+        <br><br>
+        💬 Đừng ngại inbox Zalo mình nếu bạn cần tư vấn nha!
+      </p>
+    </div>
+  </section>
+</div>
+
+<section class="products">
+  <!-- Dán các sản phẩm vào đây -->
+  <!-- Bắt đầu -->
+  <div class="product">
+    <img src="https://i.postimg.cc/jqHTZYjR/sua-tam.jpg" alt="Tẩy trang">
+    <h3>Sữa tắm Moon Kiss “Ngọc trai”</h3>
+    <p>600.000đ</p>
+    <a href="chi-tiet-dau-goi.html" class="buy-btn">Xem chi tiết</a>
+  </div>
+
+  <div class="product">
+    <img src="https://i.postimg.cc/ZKJSQs9p/srm.jpg" alt="SRM">
+    <h3>Sữa rửa mặt tinh chất trái nhàu D&H</h3>
+    <p>400.000đ</p>
+    <a href="chi-tiet-sua-rua-mat.html" class="buy-btn">Xem chi tiết</a>
+  </div>
+
+  <div class="product">
+    <img src="https://i.postimg.cc/D0GXmZSp/kem-cn.jpg" alt="Kem chống nắng">
+    <h3>Kem chống nắng ANTISUN 365 Day SPF 50+ PA++++</h3>
+    <p>800.000đ</p>
+    <a href="kemcn.html" class="buy-btn">Xem chi tiết</a>
+  </div>
+
+  <div class="product">
+    <img src="https://i.postimg.cc/3wzhbKpx/d-u-g-i-u.jpg" alt="Dầu gội">
+    <h3>Dầu gội đầu bồ kết bưởi trị gàu, giảm gãy rụng, kích thích mọc tóc</h3>
+    <p>400.000đ</p>
+    <a href="daugoi.html" class="buy-btn">Xem chi tiết</a>
+  </div>
+
+  <div class="product">
+    <img src="https://i.postimg.cc/Qtw7X5dW/giai-doc.jpg" alt="Liver Pro">
+    <h3>LIVER PRO Giải độc gan, bảo vệ gan</h3>
+    <p>900.000đ</p>
+    <a href="giaidoc.html" class="buy-btn">Xem chi tiết</a>
+  </div>
+
+  <div class="product">
+    <img src="https://i.postimg.cc/N0NTzZhD/kem-r.jpg" alt="Kem đánh răng">
+    <h3>Kem đánh răng hương thảo Love World</h3>
+    <p>400.000đ</p>
+    <a href="kemdr.html" class="buy-btn">Xem chi tiết</a>
+  </div>
+
+  <div class="product">
+    <img src="https://i.postimg.cc/RVrtycYk/kem-tr-m-n.jpg" alt="Kem trị mụn">
+    <h3>Kem Trị Mụn Aori</h3>
+    <p>200.000đ</p>
+    <a href="kemtrimun.html" class="buy-btn">Xem chi tiết</a>
+  </div>
+
+  <div class="product">
+    <img src="https://i.postimg.cc/6QbRmCrv/z5464791708894-2608174cd2faace2dd4796a8b982a195.jpg" alt="Bọt vệ sinh">
+    <h3>Bọt Vệ Sinh Vùng Kín D&H Dành Cho Nam</h3>
+    <p>299.000đ</p>
+    <a href="botxit.html" class="buy-btn">Xem chi tiết</a>
+  </div>
+  <!-- Kết thúc -->
+</section>
+
+<div id="productModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <h2 id="modalTitle"></h2>
+    <p id="modalDescription"></p>
+  </div>
+</div>
+
+<footer>
+  Mọi đơn hàng sẽ được tư vấn trước khi gửi.<br>
+  Zalo: <a href="https://zalo.me/0788644616">0788644616</a> |
+  Facebook: <a href="https://facebook.com/oanh.oanh.543652">Liên Cosmetics</a><br>
+  © 2025 by Liên
+</footer>
+
+<script>
+function showModal(title, description) {
+  document.getElementById('modalTitle').innerText = title;
+  document.getElementById('modalDescription').innerText = description;
+  document.getElementById('productModal').style.display = 'block';
+}
+function closeModal() {
+  document.getElementById('productModal').style.display = 'none';
+}
+</script>
+
+</body>
+</html>
